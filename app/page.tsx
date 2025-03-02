@@ -1,8 +1,13 @@
+'use client';
+import { styled } from '@/styles/stitches.config';
+
+const PageContainer = styled('div', {
+  backgroundColor: '#d22',
+});
 export default function Home() {
   return (
-    <div>
-      <script src="https://fake-script.com" />
+    <PageContainer>
       <p>Home</p>
-    </div>
+    </PageContainer>
   );
 }
