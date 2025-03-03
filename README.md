@@ -1,29 +1,96 @@
-# ESLint Example
+🚀 커밋 컨벤션
 
-This example shows a Next.js application using the built-in ESLint setup with the `next` shareable configuration enabled in `.eslintrc`.
+짧고 명확하게, 한 줄로 커밋 메시지를 작성하는 걸 기본 원칙으로!
 
-Learn more about the integrated ESLint configuration [in the docs](https://nextjs.org/docs/basic-features/eslint).
+## ✅ 1. 기본 형식
 
-## Deploy your own
+- ✔ 영어 or 한국어 사용 가능 (통일하는 게 중요)
+- ✔ 커밋 메시지는 현재형으로 작성
+- ✔ 문장의 끝에는 마침표( . )를 붙이지 않음
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-eslint)
+## ✅ 2. 커밋 타입 정리
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-eslint&project-name=with-eslint&repository-name=with-eslint)
+| 타입     | 설명                                            |
+| -------- | ----------------------------------------------- |
+| feat     | 새로운 기능 추가                                |
+| fix      | 버그 수정                                       |
+| refactor | 코드 리팩토링 (기능 변경 없이 구조 개선)        |
+| style    | 코드 스타일 변경 (세미콜론 추가, 포맷팅 등)     |
+| chore    | 빌드 시스템, 패키지 관리 등 코드 변경 없는 작업 |
+| docs     | 문서 추가/수정 (README.md, 주석 등)             |
+| test     | 테스트 코드 추가/수정                           |
+| ci       | CI/CD 설정 변경 (GitHub Actions, Docker 등)     |
+| perf     | 성능 개선                                       |
+| revert   | 이전 커밋 되돌리기                              |
 
-## How to use
+## ✅ 3. 커밋 메시지 예시
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+💡 기능 추가 (feat)
 
-```bash
-npx create-next-app --example with-eslint with-eslint-app
+```
+feat: 로그인 버튼 추가
+feat: Radix UI 기반 모달 구현
 ```
 
-```bash
-yarn create next-app --example with-eslint with-eslint-app
+🐞 버그 수정 (fix)
+
+```
+fix: 다크모드에서 버튼 색상이 보이지 않는 문제 수정
+fix: useEffect 의존성 배열 오류 해결
 ```
 
-```bash
-pnpm create next-app --example with-eslint with-eslint-app
+🔄 리팩토링 (refactor)
+
+```
+refactor: API 응답 데이터 처리 로직 개선
+refactor: Stitches 스타일 구조 정리
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+🎨 코드 스타일 수정 (style)
+
+```
+style: ESLint 규칙에 맞게 코드 정리
+style: 코드 포맷팅 적용 (Prettier)
+```
+
+🛠 패키지 설치 (chore)
+
+```
+chore: install Stitches, Radix UI
+chore: update dependencies
+```
+
+📜 문서 수정 (docs)
+
+```
+docs: README에 프로젝트 실행 방법 추가
+docs: 주석 정리 및 불필요한 코드 제거
+```
+
+## ✅ 4. 커밋 메시지 작성 팁
+
+✅ 의미 있는 변경 사항만 커밋하기
+
+- fix: 파일 하나 수정함 ❌ → 어떤 파일? 무슨 문제를 고쳤는지 명확하게!
+- fix: 배경색이 다크모드에서 깨지는 문제 해결 ✅
+
+✅ 한 줄로 요약이 가능하도록 짧고 간결하게!
+
+- 너무 길면 feat: <요약> 후에 본문에 추가 설명 작성 가능
+- 예시:
+
+  ```
+  feat: NextAuth 로그인 기능 추가
+
+  본문: "OAuth 2.0 기반 로그인 구현 및 API 연결"
+  ```
+
+## 🎯 최종 정리
+
+- 한 줄로 변경 내용을 요약
+- 필요하면 본문에 상세 설명 추가
+- 항상 동일한 컨벤션을 유지
+- "어떤 걸 변경했는지" 명확하게!
+
+💡 "이 커밋 메시지를 봤을 때, 변경 내용을 바로 알 수 있는가?"
+"""
